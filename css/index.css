@@ -12,7 +12,7 @@ img {
 div {
     background-color: yellow;
     /* fizemos teste com a unidade de medida vw , que seria a refencia da largura do viewport
-      e o vh eu é sobre a altura*/
+      e o vh que é sobre a altura*/
     height: 100vw; 
     width: 100px;
     margin: 16px 0;;
