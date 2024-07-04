@@ -8,44 +8,67 @@
     <title>Document</title>
     <style>
         /* 
-        as unidades de medida aqui estudada na aula 2 é
-        px - pixels
-        pt - 1/72 polegadas
-        em - refencia ao font-size do elemento-pai, ex -- 16px o pai, então 2em === 16 * 2 = 32px
-        rem - refencia ao elemento raiz (root-em)
-        % - refenciar ao font-size dp elemento-pai, quando utiliza width ou heigth
+        li {
+            list-style-type: none;
+            max-width: 33%;
+            float: left;
+        }
 
+        li img {
+            width: 100%;
+        }
+
+        @media screen and (max-width: 640px){
+            body {
+                background-color: red;
+            }
+            li {
+                max-width:  100%;
+            }
+        }
+         versão do codigo acima é o desenvolvimento começando pelo desktop
+
+        Entendemos que o melhor é seguir a boa praticar e desenvolver em mobile force, também aplicamos conceitos de media 
+        querys e breackpoints
         */
-        h1 {
-            font-size: 1em;
-        }
-        section {
-            font-size: 32px;
-        }
-        h1 {
-            font-size: 3em;
+        li {
+            list-style-type: none;
+            max-width:  100%;
         }
 
-        div {
-            height: 1em;
-            width: 1em;
-            background-color: red;
+        li img {
+            width: 100%;
+        }
+
+        @media screen and (min-width: 680px){ /* coloquei baixar por conta do meu pc, mas a ideia seria 1240px*/
+            li {
+                max-width: 33%;
+                float: left;
+            }
+        }
+
+        @media screen and (orientation: portrait) and (max-width: 640px) {
+            body {
+                background-color: red;
+            }
         }
     </style>
 </head>
 <body>
-    <div></div>
-    <h1>Título</h1>
-    <h2>Subtitulo 1</h2>
-    <section>
-        <h2>Subtitulo 2</h2>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam voluptatibus consequatur, odit molestias totam voluptates asperiores. Repellat animi cupiditate debitis, ea numquam consequatur aliquam sequi dolorem soluta, corporis earum autem.
-        </p>
-        <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam molestias, fugiat veritatis repellendus suscipit aspernatur harum quidem reiciendis earum repudiandae ad, nam rerum. Ad necessitatibus, atque rem commodi voluptas inventore.
-        </p>
-    </section>
+    <ul>
+        <li>
+            <img src="https://cdn.pixabay.com/photo/2013/07/12/18/20/shoes-153310_960_720.png" alt="Tenis">
+            <h3>Tênis All Star na cor verde</h3> 
+        </li>
+        <li>
+            <img src="https://cdn.pixabay.com/photo/2013/07/12/18/20/shoes-153310_960_720.png" alt="Tenis">
+            <h3>Tênis All Star na cor verde</h3> 
+        </li>
+        <li>
+            <img src="https://cdn.pixabay.com/photo/2013/07/12/18/20/shoes-153310_960_720.png" alt="Tenis">
+            <h3>Tênis All Star na cor verde</h3> 
+        </li>
+    </ul>
 
 </body>
 </html>
