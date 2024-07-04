@@ -1,0 +1,19 @@
+* {
+    box-sizing: borde-box;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 300px;
+    display: block;
+}
+
+div {
+    background-color: yellow;
+    /* fizemos teste com a unidade de medida vw , que seria a refencia da largura do viewport
+      e o vh eu é sobre a altura*/
+    height: 100vw; 
+    width: 100px;
+    margin: 16px 0;;
+}
