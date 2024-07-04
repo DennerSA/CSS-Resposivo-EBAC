@@ -1,16 +1,52 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<!-- vimos nesse aula a maneira de usar a tag viewport a definicação da escala inicial -->
+<html lang="pt-BR">
+<!--  -->
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./css/main.css">
+    <style>
+        /* 
+        as unidades de medida aqui estudada na aula 2 é
+        px - pixels
+        pt - 1/72 polegadas
+        em - refencia ao font-size do elemento-pai, ex -- 16px o pai, então 2em === 16 * 2 = 32px
+        rem - refencia ao elemento raiz (root-em)
+        % - refenciar ao font-size dp elemento-pai, quando utiliza width ou heigth
+
+        */
+        h1 {
+            font-size: 1em;
+        }
+        section {
+            font-size: 32px;
+        }
+        h1 {
+            font-size: 3em;
+        }
+
+        div {
+            height: 1em;
+            width: 1em;
+            background-color: red;
+        }
+    </style>
 </head>
 <body>
-    <h1>Exemplo CSS</h1>
     <div></div>
-    <img src="https://cdn.pixabay.com/photo/2018/10/01/09/21/pets-3715733_1280.jpg" alt="Cachorros">
+    <h1>Título</h1>
+    <h2>Subtitulo 1</h2>
+    <section>
+        <h2>Subtitulo 2</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam voluptatibus consequatur, odit molestias totam voluptates asperiores. Repellat animi cupiditate debitis, ea numquam consequatur aliquam sequi dolorem soluta, corporis earum autem.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam molestias, fugiat veritatis repellendus suscipit aspernatur harum quidem reiciendis earum repudiandae ad, nam rerum. Ad necessitatibus, atque rem commodi voluptas inventore.
+        </p>
+    </section>
+
 </body>
 </html>
 
