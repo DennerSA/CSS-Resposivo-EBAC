@@ -1,3 +1,3 @@
 # CSS-Resposivo-EBAC
-## Aula1
+## Aula2
 Fudamentos do CSS Resposivo
